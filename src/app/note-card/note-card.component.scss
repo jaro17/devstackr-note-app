@@ -1,6 +1,7 @@
 @import "main-styles";
 
 .note-card-container {
+  position: relative;
   background: white;
   border-radius: 5px;
 
@@ -10,6 +11,11 @@
   &:hover {
     cursor: pointer;
     box-shadow: 0 0 0 4px rgba(black, 0.068);
+
+    .x-button {
+      opacity: 1;
+      transition: opacity .5s ease-out;
+    }
   }
 
   .note-card-content {
@@ -29,6 +35,13 @@
   right: 12px;
   height: 34px;
   width: 34px;
+
   background-color: $light-red;
+  background-image: url("../../assets/delete_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 4px;
+
+  //the button is hidden by default
+  opacity: 0;
 }
