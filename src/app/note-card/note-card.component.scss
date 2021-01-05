@@ -22,3 +22,13 @@
     }
   }
 }
+
+.x-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  height: 34px;
+  width: 34px;
+  background-color: $light-red;
+  border-radius: 4px;
+}
